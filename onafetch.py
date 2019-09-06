@@ -30,7 +30,7 @@ def onafetch(form_id, state, outFile = ''):
         print('Error! Response code is', response.status_code)
         df = pd.DataFrame() # To Save and Return empty dataframe
 
-    if len(outFile) != 0:
+    if outFile:
         """
         Save Dataframe to a file for future use.
 
